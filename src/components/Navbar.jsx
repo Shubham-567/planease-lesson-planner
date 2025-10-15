@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className='bg-bg-base border-b-[1px] border-border-base z-40'>
+    <header className='fixed top-0 left-0 w-full bg-base-100 border-b-[1px] border-base-300 z-40'>
       <div className='flex justify-between items-center gap-4 px-6 py-3 max-w-7xl mx-auto'>
         <NavLink
           to='/'
@@ -45,8 +45,8 @@ const Navbar = () => {
                     `${underlineStyle}
                     ${
                       isActive
-                        ? "text-text-base after:scale-x-130"
-                        : "text-text-muted hover:text-text-base"
+                        ? "text-neutral after:scale-x-130"
+                        : "text-neutral-muted hover:text-neutral"
                     }`
                   }>
                   {link.label}
@@ -59,7 +59,7 @@ const Navbar = () => {
         <div className='flex items-center gap-4 max-md:hidden'>
           {/* dark mode toggle */}
           <button
-            className='p-1.5 text-text-muted hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-full cursor-pointer'
+            className='p-1.5 text-neutral-muted hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-full cursor-pointer'
             onClick={() => setIsDarkMode(!isDarkMode)}
             aria-label='Toggle dark mode'>
             {isDarkMode ? (
@@ -69,9 +69,7 @@ const Navbar = () => {
             )}
           </button>
 
-          <NavLink
-            to='/planner'
-            className='px-6 py-2 rounded-full bg-primary hover:bg-primary/90 text-bg-base font-bold cursor-pointer hover:-translate-y-1 transition-transform duration-300'>
+          <NavLink to='/planner' className='primary-btn text-sm py-2 px-4'>
             Get Started
           </NavLink>
         </div>
@@ -80,7 +78,7 @@ const Navbar = () => {
         <div className='md:hidden flex items-center gap-2 sm:gap-4'>
           {/* dark mode toggle */}
           <button
-            className='p-1.5 text-text-muted hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-full cursor-pointer'
+            className='p-1.5 text-neutral-muted hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-full cursor-pointer'
             onClick={() => setIsDarkMode(!isDarkMode)}
             aria-label='Toggle dark mode'>
             {isDarkMode ? (
@@ -103,7 +101,7 @@ const Navbar = () => {
 
           {/* mobile menu overlay */}
           {isMenuOpen && (
-            <nav className='absolute -z-5 bg-bg-surface/80 backdrop-blur-2xl min-h-[90vh] w-full  -top-2 left-0'>
+            <nav className='absolute -z-5 bg-base-200/80 backdrop-blur-2xl min-h-[90vh] w-full  -top-2 left-0'>
               <ul className='flex flex-col justify-center items-center md:hidden text-3xl font-bold gap-8 h-screen'>
                 {navLinks.map((link) => (
                   <li key={link.to}>
@@ -111,8 +109,8 @@ const Navbar = () => {
                       to={link.to}
                       className={({ isActive }) =>
                         isActive
-                          ? "text-text-base after:scale-x-130"
-                          : "text-text-muted hover:text-text-base"
+                          ? "text-neutral after:scale-x-130"
+                          : "text-neutral-muted hover:text-neutral"
                       }
                       onClick={() => setIsMenuOpen(false)}>
                       {link.label}

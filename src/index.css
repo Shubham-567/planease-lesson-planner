@@ -8,12 +8,14 @@
   --secondary: hsl(349, 89%, 60%);
   --accent: hsl(38, 92%, 50%);
 
-  --text-base: hsl(215, 33%, 17%);
-  --text-muted: hsl(215, 16%, 47%);
+  /* Text color */
+  --neutral: hsl(215, 33%, 17%);
+  --neutral-muted: hsl(215, 16%, 47%);
 
-  --bg-base: hsl(210, 25%, 98%);
-  --bg-surface: hsl(214, 27%, 96%);
-  --border-base: hsl(215, 25%, 91%);
+  /* Background colors */
+  --base-100: hsl(210, 25%, 98%);
+  --base-200: hsl(214, 27%, 96%);
+  --base-300: hsl(215, 25%, 91%);
 }
 
 .dark {
@@ -22,12 +24,14 @@
   --secondary: hsl(351, 95%, 71%);
   --accent: hsl(45, 97%, 56%);
 
-  --text-base: hsl(215, 25%, 91%);
-  --text-muted: hsl(215, 20%, 65%);
+  /* Text color */
+  --neutral: hsl(215, 25%, 91%);
+  --neutral-muted: hsl(215, 20%, 65%);
 
-  --bg-base: hsl(222, 47%, 11%);
-  --bg-surface: hsl(215, 33%, 17%);
-  --border-base: hsl(215, 25%, 27%);
+  /* Background colors */
+  --base-100: hsl(222, 47%, 11%);
+  --base-200: hsl(215, 33%, 17%);
+  --base-300: hsl(215, 25%, 27%);
 }
 
 @theme {
@@ -35,12 +39,14 @@
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
 
-  --color-text-base: var(--text-base);
-  --color-text-muted: var(--text-muted);
+  /* Text color */
+  --color-neutral: var(--neutral);
+  --color-neutral-muted: var(--neutral-muted);
 
-  --color-bg-base: var(--bg-base);
-  --color-bg-surface: var(--bg-surface);
-  --color-border-base: var(--border-base);
+  /* Background colors */
+  --color-base-100: var(--base-100);
+  --color-base-200: var(--base-200);
+  --color-base-300: var(--base-300);
 
   --font-sans: "Nunito Sans", sans-serif;
   --font-serif: "Lora", serif;
@@ -48,7 +54,7 @@
 
 @layer base {
   body {
-    @apply bg-bg-base text-text-base;
+    @apply bg-base-100 text-neutral overflow-x-hidden;
   }
 
   h1,
@@ -61,6 +67,8 @@
   }
 }
 
-/* @layer components {
-
-} */
+@layer components {
+  .primary-btn {
+    @apply flex items-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-primary/90 text-base-100 font-bold cursor-pointer hover:-translate-y-1 transition-transform duration-300 max-w-fit;
+  }
+}
