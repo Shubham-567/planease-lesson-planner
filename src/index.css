@@ -72,6 +72,14 @@
     @apply flex items-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-primary/90 text-base-100 font-bold cursor-pointer hover:-translate-y-1 transition-transform duration-300 max-w-fit;
   }
 
+  .outline-btn {
+    @apply flex items-center gap-2 px-6 py-3 rounded-full ring ring-primary bg-base-100 hover:bg-primary/10 text-primary font-bold cursor-pointer transition-transform duration-300 max-w-fit;
+  }
+
+  .icon-btn {
+    @apply p-2 text-neutral-muted hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-full transition-all duration-300 cursor-pointer;
+  }
+
   .container {
     @apply max-w-7xl mx-auto px-6 py-3;
   }

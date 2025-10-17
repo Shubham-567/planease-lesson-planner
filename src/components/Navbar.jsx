@@ -25,8 +25,8 @@ const Navbar = () => {
   ];
 
   return (
-    <header className='fixed top-0 left-0 w-full bg-base-100 border-b-[1px] border-base-300 z-40'>
-      <div className='flex justify-between items-center gap-4 px-6 py-3 max-w-7xl mx-auto'>
+    <header className='fixed top-0 left-0 w-full bg-base-100 border-b-[1px] border-base-300 z-50'>
+      <div className='flex justify-between items-center gap-4 px-6 py-3.5 max-w-7xl mx-auto'>
         <NavLink
           to='/'
           className='text-2xl font-bold font-serif flex items-center gap-2'
@@ -59,17 +59,22 @@ const Navbar = () => {
         <div className='flex items-center gap-4 max-md:hidden'>
           {/* dark mode toggle */}
           <button
-            className='p-1.5 text-neutral-muted hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-full cursor-pointer'
             onClick={() => setIsDarkMode(!isDarkMode)}
+            className='icon-btn'
             aria-label='Toggle dark mode'>
-            {isDarkMode ? (
-              <Sun className='size-5' />
-            ) : (
-              <Moon className='size-5' />
-            )}
+            <div
+              className={`transition-transform duration-500 ${
+                isDarkMode ? "rotate-180" : "rotate-0"
+              }`}>
+              {isDarkMode ? (
+                <Sun className='size-5' />
+              ) : (
+                <Moon className='size-5' />
+              )}
+            </div>
           </button>
 
-          <NavLink to='/planner' className='primary-btn text-sm py-2 px-4'>
+          <NavLink to='/planner' className='outline-btn text-sm py-2 px-4'>
             Get Started
           </NavLink>
         </div>
@@ -78,14 +83,19 @@ const Navbar = () => {
         <div className='md:hidden flex items-center gap-2 sm:gap-4'>
           {/* dark mode toggle */}
           <button
-            className='p-1.5 text-neutral-muted hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-full cursor-pointer'
             onClick={() => setIsDarkMode(!isDarkMode)}
+            className='icon-btn'
             aria-label='Toggle dark mode'>
-            {isDarkMode ? (
-              <Sun className='size-5' />
-            ) : (
-              <Moon className='size-5' />
-            )}
+            <div
+              className={`transition-transform duration-500 ${
+                isDarkMode ? "rotate-180" : "rotate-0"
+              }`}>
+              {isDarkMode ? (
+                <Sun className='size-5' />
+              ) : (
+                <Moon className='size-5' />
+              )}
+            </div>
           </button>
 
           <button
@@ -101,8 +111,8 @@ const Navbar = () => {
 
           {/* mobile menu overlay */}
           {isMenuOpen && (
-            <nav className='absolute -z-5 bg-base-200/80 backdrop-blur-2xl min-h-[90vh] w-full  -top-2 left-0'>
-              <ul className='flex flex-col justify-center items-center md:hidden text-3xl font-bold gap-8 h-screen'>
+            <nav className='absolute -z-5 bg-base-100 min-h-[90vh] w-full top-[4rem] left-0 '>
+              <ul className='flex flex-col justify-center items-center md:hidden text-3xl font-bold gap-8 min-h-[94vh] border-t border-base-300'>
                 {navLinks.map((link) => (
                   <li key={link.to}>
                     <NavLink

@@ -4,7 +4,7 @@ import HeroIllustration from "../../components/illustrations/HeroIllustration";
 
 const HeroSection = () => {
   return (
-    <section className='container relative flex items-center justify-between gap-4 min-h-[95vh] mt-10'>
+    <section className='container relative flex items-center justify-between gap-4 min-h-[42rem] mt-10'>
       {/* background circles */}
       <div className='absolute -top-20 right-0 size-120 bg-secondary/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 -z-10'></div>
 

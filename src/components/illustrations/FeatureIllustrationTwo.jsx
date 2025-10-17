@@ -5,7 +5,7 @@ const FeatureIllustrationTwo = () => {
     <>
       {/* time-saving workflow illustration */}
       <div className='relative p-4 block'>
-        <div className='bg-base-200 p-3 rounded-2xl transform border border-base-300 max-w-lg mx-auto transition-transform duration-600 ease-in-out hover:-rotate-3 hover:scale-105 hover:shadow-xl'>
+        <div className='bg-base-200 p-3 rounded-2xl transform border border-base-300 max-w-lg mx-auto transition-transform duration-600 ease-in-out hover:-rotate-3 hover:scale-105 hover:shadow-xl shadow-primary/10'>
           <div className='aspect-[4/3] bg-base-100 rounded-lg p-6'>
             <div className='flex items-center gap-3 mb-6'>
               <Clock className='size-6 text-accent' />

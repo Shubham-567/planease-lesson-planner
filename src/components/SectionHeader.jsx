@@ -1,7 +1,7 @@
 const SectionHeader = ({ heading, subHeading, description }) => {
   return (
     <div className='space-y-3'>
-      <h2 className='text-base md:text-lg lg:text-xl font-bold font-sans text-secondary flex items-center gap-4'>
+      <h2 className='text-sm tracking-widest font-bold font-sans text-secondary flex items-center gap-4 uppercase'>
         {heading ? heading : "Section Heading"}
         {/* horizontal line */}
         <div className='h-[2px] w-12 bg-secondary my-3' />
