@@ -6,7 +6,7 @@ import SectionHeader from "../../components/SectionHeader";
 
 const FeaturesSection = () => {
   return (
-    <section className='bg-base-200 min-h-[80vh] w-full'>
+    <section className='bg-base-200 min-h-[42rem] w-full'>
       <div className='container py-12'>
         {/* Section Header */}
         <SectionHeader

@@ -5,7 +5,7 @@ import Card from "../../components/Card";
 const HowItWorksSection = () => {
   return (
     <section className='bg-base-100 min-h-[80vh] w-full'>
-      <div className='container py-18'>
+      <div className='container py-18 space-y-10'>
         {/* Section Header */}
         <SectionHeader
           heading='How It Works'
@@ -13,7 +13,7 @@ const HowItWorksSection = () => {
           description='From initial idea to a polished, ready-to-teach plan, our streamlined process makes lesson plan creation intuitive and fast.'
         />
         {/* 3 step cards  */}
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-10'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           <Card
             icon={<FileText className='size-6 md:size-8' />}
             title='1. Input Your Details'
