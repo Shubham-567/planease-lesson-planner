@@ -1,4 +1,3 @@
-import { Quote } from "lucide-react";
 import SectionHeader from "../../components/SectionHeader";
 import TestimonialCard from "../../components/TestimonialCard";
 

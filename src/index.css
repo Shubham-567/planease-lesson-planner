@@ -18,10 +18,11 @@
   --base-300: hsl(215, 25%, 91%);
 }
 
-.dark {
+.dark,
+.callToAction {
   /* --- Dark Mode --- */
   --primary: hsl(172, 65%, 50%);
-  --secondary: hsl(351, 95%, 71%);
+  --secondary: hsl(351, 100%, 65%);
   --accent: hsl(45, 97%, 56%);
 
   /* Text color */
@@ -68,11 +69,15 @@
 }
 
 @layer components {
-  .primary-btn {
-    @apply flex items-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-primary/90 text-base-100 font-bold cursor-pointer hover:-translate-y-1 transition-transform duration-300 max-w-fit;
+  .btn-primary {
+    @apply flex items-center gap-2 bg-primary/90 text-base-100 font-semibold py-3 px-8 rounded-full ring-base-300 shadow-lg shadow-primary/20 transition-all duration-300 ease-in-out hover:bg-primary hover:shadow-primary/30 hover:-translate-y-1 max-w-fit;
   }
 
-  .outline-btn {
+  .btn-secondary {
+    @apply flex items-center gap-2 bg-secondary/90 text-base-100 font-semibold py-3 px-8 rounded-full ring-base-300 shadow-lg shadow-secondary/20 transition-all duration-300 ease-in-out hover:bg-secondary hover:shadow-secondary/30 hover:-translate-y-1 max-w-fit;
+  }
+
+  .btn-outline {
     @apply flex items-center gap-2 px-6 py-3 rounded-full ring ring-primary bg-base-100 hover:bg-primary/10 text-primary font-bold cursor-pointer transition-transform duration-300 max-w-fit;
   }
 

@@ -74,7 +74,7 @@ const Navbar = () => {
             </div>
           </button>
 
-          <NavLink to='/planner' className='outline-btn text-sm py-2 px-4'>
+          <NavLink to='/planner' className='btn-outline text-sm py-2 px-4'>
             Get Started
           </NavLink>
         </div>

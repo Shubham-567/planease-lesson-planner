@@ -4,7 +4,7 @@ import Card from "../../components/Card";
 
 const HowItWorksSection = () => {
   return (
-    <section className='bg-base-100 min-h-[80vh] w-full'>
+    <section className='bg-base-200 min-h-[80vh] w-full'>
       <div className='container py-18 space-y-10'>
         {/* Section Header */}
         <SectionHeader
