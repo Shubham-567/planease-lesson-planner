@@ -3,7 +3,7 @@ import { Activity, CheckCircle, ClipboardCheck } from "lucide-react";
 const HeroIllustration = () => {
   return (
     <div className='relative hidden w-1/2 p-4 md:block'>
-      <div className='bg-base-200 p-3 rounded-2xl transform md:-rotate-2 border border-base-300 max-w-lg mx-auto transition-all duration-600 ease-in-out hover:rotate-0 hover:scale-105 hover:shadow-xl shadow-primary/10'>
+      <div className='bg-base-200 p-3 rounded-2xl transform md:-rotate-2 border border-base-300 max-w-lg mx-auto transition-transform duration-600 ease-in-out hover:rotate-0 hover:scale-105 hover:shadow-xl shadow-primary/10'>
         <div className='aspect-[4/3] bg-base-100 rounded-lg p-6'>
           {/* Header */}
           <div className='flex justify-between items-start mb-6'>

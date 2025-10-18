@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
         <Route path='/faq' element={<p>faq</p>} />
         <Route path='*' element={<p>404</p>} />
       </Routes>
+
+      <Footer />
     </div>
   );
 };
