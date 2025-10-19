@@ -2,7 +2,7 @@ import { CheckCircle, Sparkles } from "lucide-react";
 
 const FeatureCard = ({ title, description, features, icon }) => {
   return (
-    <div className='flex flex-col justify-center gap-6'>
+    <div className='flex flex-col justify-center gap-6 w-full md:w-1/2'>
       <div className='flex items-center gap-3 sm:gap-4'>
         <div className='bg-primary/10 rounded-xl p-3'>
           {icon ? icon : <Sparkles className='size-6 text-primary' />}

@@ -12,7 +12,7 @@ const HeroSection = () => {
           Our Mission
         </span>
 
-        <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold font-serif'>
+        <h1 className='text-4xl md:text-5xl lg:text-5\6xl font-bold font-serif'>
           Less Planning and More Teaching
         </h1>
 

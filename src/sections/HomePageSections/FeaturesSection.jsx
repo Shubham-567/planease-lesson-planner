@@ -16,7 +16,7 @@ const FeaturesSection = () => {
         />
 
         {/* Feature Cards and Illustrations */}
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-10'>
+        <div className='flex max-md:flex-col items-center justify-between gap-6 mt-10'>
           <FeatureCard
             title='Smart Assistance'
             description='Go beyond templates. Our AI provides intelligent suggestions for activities, assessments, and differentiation strategies to build dynamic, effective lesson plans.'
@@ -28,12 +28,10 @@ const FeaturesSection = () => {
             icon={<Lightbulb className='size-5 md:size-6 text-primary' />}
           />
 
-          {/* Illustration */}
-
           <FeatureIllustrationOne />
+        </div>
 
-          <FeatureIllustrationTwo />
-
+        <div className='flex max-md:flex-col items-center justify-between gap-6 mt-10 flex-row-reverse'>
           <FeatureCard
             title='Time-Saving Workflow'
             description='Our intuitive interface and powerful AI drastically reduce
@@ -46,6 +44,8 @@ const FeaturesSection = () => {
             ]}
             icon={<Clock className='size-5 md:size-6 text-primary' />}
           />
+
+          <FeatureIllustrationTwo />
         </div>
       </div>
     </section>
