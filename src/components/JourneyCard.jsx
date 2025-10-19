@@ -1,6 +1,6 @@
 import { Sparkles } from "lucide-react";
 
-const JourneyCard = ({ icon, title, description, index, className }) => {
+const JourneyCard = ({ icon, title, description, className }) => {
   return (
     <div
       className={`flex flex-col bg-base-100 p-8 rounded-2xl ring ring-base-300 shadow-lg shadow-primary/5 transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 overflow-hidden ${className}`}>

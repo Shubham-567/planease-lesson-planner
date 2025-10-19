@@ -25,7 +25,7 @@ const OurJourneySection = () => {
   ];
 
   return (
-    <section className='bg-base-200 min-h-[42rem] w-full'>
+    <section className='bg-base-200 w-full'>
       <div className='container py-12'>
         {/* Section Header */}
         <SectionHeader
