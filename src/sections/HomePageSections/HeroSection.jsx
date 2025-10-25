@@ -23,7 +23,7 @@ const HeroSection = () => {
           strategies in minutes.
         </p>
 
-        <Link to='/planner' className='btn-primary'>
+        <Link to='/planner' className='btn btn-primary w-fit mt-8'>
           <Zap className='size-6' />
           <span>Start Creating Free</span>
         </Link>

@@ -1,3 +1,5 @@
+import PageHeader from "../../components/PageHeader";
+
 const HeroSection = () => {
   return (
     <section className='container relative flex max-md:flex-col items-center md:justify-between gap-8 md:gap-4 min-h-[42rem] pt-24'>
@@ -8,19 +10,11 @@ const HeroSection = () => {
 
       {/* left side - text content */}
       <div className='md:w-1/2 space-y-4 w-full '>
-        <span className='text-base tracking-widest font-bold font-sans text-primary flex items-center gap-4 uppercase'>
-          Our Mission
-        </span>
-
-        <h1 className='text-4xl md:text-5xl lg:text-5\6xl font-bold font-serif'>
-          Less Planning and More Teaching
-        </h1>
-
-        <p className='sm:text-lg text-neutral-muted'>
-          PlanEase was born from a simple idea: give teachers their time back.
-          We leverage AI to handle the tedious parts of lesson planning, so
-          educators can focus on what they do best—inspiring students.
-        </p>
+        <PageHeader
+          title='Our Mission'
+          heading='Less Planning and More Teaching'
+          description='PlanEase was born from a simple idea: give teachers their time back. We leverage AI to handle the tedious parts of lesson planning, so educators can focus on what they do best—inspiring students.'
+        />
       </div>
 
       {/* right side - image */}

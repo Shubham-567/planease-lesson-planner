@@ -31,7 +31,7 @@ const CallToAction = () => {
                   </p>
                 </div>
                 <div className='flex-shrink-0'>
-                  <Link to='/planner' className='btn-secondary'>
+                  <Link to='/planner' className='btn btn-secondary'>
                     <Zap className='size-5' />
                     Start Creating Free
                   </Link>

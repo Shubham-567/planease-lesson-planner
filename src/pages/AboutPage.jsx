@@ -1,3 +1,4 @@
+import CallToAction from "../components/CallToAction";
 import CoreValuesSection from "../sections/aboutPageSections/CoreValuesSection";
 import HeroSection from "../sections/aboutPageSections/HeroSection";
 import OurJourneySection from "../sections/aboutPageSections/OurJourneySection";
@@ -8,6 +9,7 @@ const AboutPage = () => {
       <HeroSection />
       <OurJourneySection />
       <CoreValuesSection />
+      <CallToAction />
     </main>
   );
 };
