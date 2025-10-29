@@ -60,7 +60,7 @@ const Navbar = () => {
           {/* dark mode toggle */}
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
-            className='icon-btn'
+            className='btn-icon'
             aria-label='Toggle dark mode'>
             <div
               className={`transition-transform duration-500 ${

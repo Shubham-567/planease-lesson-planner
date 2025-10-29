@@ -9,7 +9,7 @@ const PageHeader = ({ title, heading, description }) => {
         {heading ? heading : "Page Heading"}
       </h1>
 
-      <p className='sm:text-lg text-neutral-muted'>
+      <p className='sm:text-lg text-neutral-muted max-w-2xl'>
         {description ? description : "Description of the page goes here."}
       </p>
     </div>

@@ -16,6 +16,7 @@
   --base-100: hsl(210, 25%, 98%);
   --base-200: hsl(214, 27%, 96%);
   --base-300: hsl(215, 25%, 91%);
+  --base-400: hsl(215, 20%, 65%);
 }
 
 .dark,
@@ -33,6 +34,7 @@
   --base-100: hsl(222, 47%, 11%);
   --base-200: hsl(215, 33%, 17%);
   --base-300: hsl(215, 25%, 27%);
+  --base-400: hsl(215, 16%, 47%);
 }
 
 @theme {
@@ -48,6 +50,7 @@
   --color-base-100: var(--base-100);
   --color-base-200: var(--base-200);
   --color-base-300: var(--base-300);
+  --color-base-400: var(--base-400);
 
   --font-sans: "Nunito Sans", sans-serif;
   --font-serif: "Lora", serif;
@@ -85,7 +88,7 @@
     @apply bg-base-100 text-primary hover:bg-primary/10 ring ring-primary hover:shadow-primary/30;
   }
 
-  .icon-btn {
+  .btn-icon {
     @apply p-2 text-neutral-muted hover:text-primary bg-primary/10 hover:bg-primary/20 rounded-full transition-all duration-300 cursor-pointer;
   }
 
